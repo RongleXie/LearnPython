@@ -2,6 +2,10 @@
 # docker build -t xianhu/centos:v7.8.2 .
 # docker run -it --name test [-p -v] xianhu/centos:v7.8.2
 
+# 特权进入
+# docker run -itd --name test --privileged=true xianhu/centos:v7.8.2 /usr/sbin/init
+# docker exec -it test /bin/bash
+
 FROM centos:7.8.2003
 MAINTAINER xianhu <qixianhu@qq.com>
 
